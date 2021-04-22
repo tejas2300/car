@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <title>Document</title>
+    <script> 
+        function fun(){ 
+            document.getElementById('name_t').value=''; 
+            document.getElementById('number_t').value=''; 
+            document.getElementById('email_t').value=''; 
+            document.getElementById('intrest_t').value=''; 
+            document.getElementById('info_t').value=''; 
+            document.getElementById('reset_t').value=''; 
+      
+            } 
+      </script>
+      <style>
+
+        body    {
+            background-image: url(car_back_1.jpg);
+            /* background-color: black; */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: white;
+        }
+    
+        .head{
+        width: 1000px;
+        background-color:  rgb(255, 255, 255, 0.1);
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bold;
+        
+        font-family:'Courier New', Courier, monospace;
+        text-align:center;
+        border-radius: 15px 15px 0px 0px;
+      }
+    
+      .main{
+        width: 1200px;
+        background-color: rgb(255, 255, 255, 0.7);
+        margin: auto;
+        color: rgb(0, 0, 0, 0.9);
+        font-size: 30px;
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+        text-align:left;
+        border-radius: 0px 0px 15px 15px;
+        
+      }
+    
+      .abs{
+          background-color: blue;
+          color: white;
+          padding: 5px;
+          font-size: 40px;
+          border-radius: 15px;
+      }
+    
+      .para{
+          font-size: 25px;
+          width: 900px;
+          margin-left: 200px;
+          background-color: rgba(255, 255, 255, 0.6);
+          padding: 15px;
+          color: rgb(0, 0, 0);
+          border-radius: 15px;
+      }
+    
+      .input_name{
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 15px;
+        height: 20px;
+        width: 300px;
+        color: white;
+        font-size: 25px;
+      }
+    
+      .input{
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 15px;
+        height: 20px;
+        width: 250px;
+        color: white;
+        font-size: 25px;
+      }
+    
+      .input_email{
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 15px;
+        height: 20px;
+        width: 770px;
+        color: white;
+        font-size: 25px;
+      }
+    
+      .input_note{
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 15px;
+        width: 250px;
+        width: 1050px;
+        color: white;
+        font-size: 25px;
+      }
+    
+      .submit_t{
+        background-color: rgb(0, 0, 0, 0.9);
+        color: white;
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+
+
+
+
+      header{
+   
+   height: 100vh;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.navigationbar{
+   text-align: right;
+   padding: 20px;
+   background-color: rgb(20, 20, 63);
+
+}
+
+.navigationbar a{
+
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-right: 80px;
+   border: 2px solid transparent;
+   padding: 10px;
+   transition:0.3s;
+}
+
+.navigationbar a:hover{
+   background: #000000;
+   border: 2px solid #ffffff;
+
+}
+.navigationbar b{
+
+text-decoration: none;
+color: #2d3af1;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+margin-right: 400px;
+border: 2px solid transparent;
+padding: 10px;
+transition:0.3s;
+}
+      
+    
+    
+    </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navigationbar">
+              <b class="conpany_name">Penta Moters</b>
+                <a href="index.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact us</a>
+            </div> 
+            <br>
+            <div style="text-align: center;">
+                <span class="abs">
+                  Contact  us
+                </span>
+            </div>
+            <br>
+            <div style="text-align:left;" class="para">
+                <p>
+                    Mercedes-Benz AG is responsible for the global business of Mercedes-Benz Cars and Mercedes-Benz Vans with over 173,000 employeesworldwide. Ola Källenius is Chairman of the Board of Management of Mercedes-Benz AG. The company focuses on the development, production and sales of passenger cars, vans and services. Furthermore, the company aspires to be leading in the fields of connectivity, automated driving and alternative drives with its forward-looking innovations. The product portfolio comprises the Mercedes-Benz brand with the sub-brands Mercedes-AMG, Mercedes-Maybach and Mercedes me - as well as the smart brand, and the EQ product and technology brand for electric mobility.
+                </p>
+              
+            </div>
+            <br><br>
+        
+            <div class="head">
+                Registration form for Technical Events
+              </div>
+            
+              <div class="main">
+                <br>
+                &emsp;&emsp;<label class="text">Full name:</label>
+                <input class="input_name" type="text" id="name_t" required>&emsp;
+            
+                <label class="text">Contact No.:</label>
+                <input class="input" type="number" id="number_t" required><br><br>
+            
+                &emsp;&emsp;<label class="text">Email address:</label>
+                <input class="input_email" type="email" id="email_t" required><br><br>
+            
+                &emsp;&emsp;<label class="text">Message</label><br>
+                &emsp;&emsp;<textarea class="input_note" rows="5" cols="100" type="text" id="info_t" required></textarea>
+                
+                <div style="text-align: center;" class="button">
+                <button class="submit_t" id="submit_t">Submit</button>
+                <input class="submit_t" id="reset_t" onclick="fun()" type="submit" value="Reset" />
+                </div>
+            </div>  
+        </div> 
+    </div> 
+</body>
+</html>

@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.header{
+   
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigationbar{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(20, 20, 63);
+    
+
+}
+
+
+
+
+
+.navigationbar a{
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition:0.3s;
+}
+
+.navigationbar b{
+
+  text-decoration: none;
+  color: #2d3af1;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 400px;
+  border: 2px solid transparent;
+  padding: 10px;
+  transition:0.3s;
+}
+
+.navigationbar a:hover{
+    background: #000000;
+    border: 2px solid #ffffff;
+
+}
+.head_content{
+    margin-top: 120px;
+    margin-left: 400px;
+    display: flex;
+ align-items: center;
+
+    
+
+}
+
+
+.head_content img{
+    margin-left: 100px;
+    border: 2px solid #ffffff;
+   
+
+}
+.head_content img:hover{
+    
+    border: 2px solid #000000;
+    
+}
+.head_text{
+    text-align: start;
+    
+}
+.text1{
+    color: whitesmoke;
+}
+.name{
+    color: whitesmoke;
+    font-size: 40px;
+  
+}
+
+
+
+
+
+/* .mySlides {box-sizing: border-box} */
+  /* body {font-family: Verdana, sans-serif; margin:0} */
+  .mySlides {
+    display: none;
+    /* max-width: 600px; */
+    
+   }
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .column {
+  
+    float: left;
+    width: 28.48%;
+    padding: 30px 30px ;
+    /* margin-left: 200px; */
+  }
+  
+ 
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color:rgba(255, 255, 255,0.8);
+    border-radius: 15px;
+  }
+  /* .card img{
+    border-radius: "50%";
+  }
+
+  .card img :hover{
+    /* transform: scale(1.2); */
+    /* zoom: 1; */
+
+  /* } */ 
+  .specification1{
+      /* align-items: flex-start; */
+
+      text-align: justify;
+      margin-left: 22px;
+      margin-top: 20px;
+      padding-top: 10px;
+  }
+  .fas{
+     font-size: 18px;
+  }
+  .sp{
+      font-size: 20px;
+      color: blueviolet;
+  }
+  .sp_span{
+      font-size: 20px;
+      color: brown;
+  }
+
+
+
+.main_content img{
+    
+    width: 250px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.main_content {
+    /* display: flex; */
+}
+.text_content{
+    width: 600px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    margin-left: 30px;
+    text-align:justify;
+}
+.social{
+    margin-top: 40px;
+    margin-left: 20px;
+    
+}
+.social a{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 5px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+

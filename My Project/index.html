@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Tejas Patil</title>
+</head>
+<style>
+  body    {
+            background-image: url(car_back_1.jpg);
+            /* background-color: black; */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            /* color: white; */
+        }
+        .slideshow-container {
+          max-width: 96%;
+          margin-top: 100px;
+          margin-left: 25px;
+          margin-right: 10px;
+          position: relative;
+          align-self: center;
+        }
+        .b_btn{
+          margin-top: 20px;
+          max-width: 100%;
+          max-height: 100px;
+          background-color: blue;
+          border: cornsilk;
+          font-size: 16px;
+          color: white;
+          box-shadow: 3px;
+          padding: 5px;
+          border-radius: 20px;
+        }
+        .model_name{
+          font-size: 20px;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          margin-bottom: 10px;
+        }
+       
+        
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navigationbar">
+              <b class="conpany_name">Penta Moters</b>
+                <a href="index.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact us</a>
+                
+            </div> 
+            
+            <!-- slider -->
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="car1.jpg" style="width:100%">
+               
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="car2.jpg" style="width:100%">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="car3.jpg" style="width:100%">
+              
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="car4.jpg" style="width:100%">
+               
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+              </div>
+              
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+              
+
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="model_name">C200</div>
+              <img src="product-1-370x270.jpg" style="width:100%">
+              <div class="specification1">
+              <strong>
+              <b> <del> ₹  4400000</del> ₹ </b><b  id="price">4000000</b><br><br>
+              <b>Engine Type: </b><b  id="e_type">Desel</b><br><br>
+              <b>Power: </b><b  id="power">250hp</b><br><br>
+              </strong>
+              </div>
+              <strong><i  class='fas'>&#xf3fd;</i>
+              130000 km/hr
+              </strong>
+              &nbsp;&nbsp;&nbsp;
+              <strong><i  class='fas'>&#xf1b3;</i>
+              1200cc
+              </strong>
+              &nbsp;&nbsp;&nbsp;
+              <strong><i  class='fas'>&#xf013;</i>
+              Manual
+              </strong>
+              &nbsp;&nbsp;&nbsp;
+              <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>
+            </div>
+          </div>
+
+  
+          <div class="column">
+            <div class="card">
+              <div class="model_name">C220</div>
+              <img src="product-2-370x270.jpg" style="width:100%">
+              <div class="specification1">
+                <strong>
+                  <b> <del> ₹  3400000</del> ₹ </b><b  id="price">3000000</b><br><br>
+                  <b>Engine Type: </b><b  id="e_type">Petrol</b><br><br>
+                  <b>Power: </b><b  id="power">180hp</b><br><br>
+                </strong>
+      
+              </div>
+        <strong><i  class='fas'>&#xf3fd;</i>
+          134000 km/hr
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf1b3;</i>
+          1200cc
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf013;</i>
+          Automatic
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="model_name">S200</div>      
+      <img src="product-3-370x270.jpg" style="width:100%">
+      <div class="specification1">
+        <strong>
+           <b> <del> ₹  5800000</del> ₹ </b><b  id="price">499999</b><br><br>
+           <b>Engine Type: </b><b  id="e_type">Desel</b><br><br>
+           <b>Power: </b><b  id="power">150hp</b><br><br>
+          </strong>
+      </div>
+        <strong><i  class='fas'>&#xf3fd;</i>
+          130 km/hr
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf1b3;</i>
+          1290cc
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf013;</i>
+          Manual
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <br>
+          <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="model_name">S220</div>        
+      <img src="product-4-370x270.jpg" style="width:100%">
+      <div class="specification1">
+        <strong>
+           <b> <del> ₹  2400000</del> ₹ </b><b  id="price">2000000</b><br><br>
+           <b>Engine Type: </b><b  id="e_type">Desel</b><br><br>
+           <b>Power: </b><b  id="power">190hp</b><br><br>
+          </strong>
+      </div>
+        <strong><i  class='fas'>&#xf3fd;</i>
+          1300 km/hr
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf1b3;</i>
+          1200cc
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <strong><i  class='fas'>&#xf013;</i>
+          Autonmatic
+          </strong>
+          &nbsp;&nbsp;&nbsp;
+          <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="model_name">Mayback Fortune </div>      
+      <img src="product-5-370x270.jpg" style="width:100%">    
+       <div class="specification1">
+      <strong>
+         <b> <del> ₹  1400000</del> ₹ </b><b  id="price">1000000</b><br><br>
+         <b>Engine Type: </b><b  id="e_type">Desel</b><br><br>
+         <b>Power: </b><b  id="power">150hp</b><br><br>
+        </strong>
+    </div>
+      <strong><i  class='fas'>&#xf3fd;</i>
+        130000 km/hr
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <strong><i  class='fas'>&#xf1b3;</i>
+        1200cc
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <strong><i  class='fas'>&#xf013;</i>
+        Manual
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="model_name">Mayback Stelon</div>    
+      <img src="product-6-370x270.jpg" style="width:100%">    
+      <div class="specification1">
+      <strong>
+         <b> <del> ₹  2400000</del> ₹ </b><b  id="price6">2000000</b><br><br>
+         <b>Engine Type: </b><b  id="e_type">Desel</b><br><br>
+         <b>Power: </b><b  id="power">150hp</b><br><br>
+        </strong>
+    </div>
+      <strong><i  class='fas'>&#xf3fd;</i>
+        130000 km/hr
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <strong><i  class='fas'>&#xf1b3;</i>
+        1200cc
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <strong><i  class='fas'>&#xf013;</i>
+        Manual
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <a href="nxtpage.php" ><button class="b_btn" >Book now</button></a>     
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
